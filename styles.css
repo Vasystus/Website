@@ -1,0 +1,89 @@
+/* body structured as a box */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+/* front-family */
+    --ff-primary: Arial, Helvetica, sans-serif;
+/* intencity of color */
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+/* font-sizes */
+    --fs-h1: 3 rem;
+    --fs-h2: 2.25 rem;
+    --fs-h3: 1.25 rem;
+    --fs-body: 1 rem;
+}
+
+/* if the screen rezises then fonts and everything will resize as well */
+@media(max-width: 800px) {
+    :root {
+        --fs-h1: 4.5 rem;
+        --fs-h2: 3.75 rem;
+        --fs-h3: 1.5 rem;
+        --fs-body: 1.125 rem;
+    }
+}
+
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-style: var(--fs-body);
+    line-height: 1.6;
+}
+
+strong {
+    font-weight: var(--fw-bold);
+}
+
+img {
+   display: block;
+   max-width: 100%;
+}
+
+h1, 
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1 { font-size: var(--fs-h1); }
+
+h2 { font-size: var(--fs-h2); }
+
+h3 { font-size: var(--fs-h3); }
+
+.section_title {
+    margin-bottom: 0.25em;
+    
+}
+
+.section_title__intro strong {
+    display: block;
+}
+.section_subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section_subtitle__intro, 
+.section_subtitle__about {
+    background: var(--clr-accent);
+    font-family: var(--ff-primary);
+    
+
+}
+
+ 
