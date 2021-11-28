@@ -10,7 +10,7 @@
 /* front-family */
     --ff-primary: Arial, Helvetica, sans-serif;
 /* intencity of color */
-    --fw-reg: 300;
+    --fw-reg: 300;cd
     --fw-bold: 900;
 
     --clr-light: #fff;
@@ -23,6 +23,10 @@
     --fs-body: 1 rem;
 }
 
+html, body{
+    height: 100%;
+}
+
 /* if the screen rezises then fonts and everything will resize as well */
 @media(max-width: 800px) {
     :root {
@@ -33,7 +37,57 @@
     }
 }
 
+header {
+     
+    overflow: hidden;
+}
+.top_header {
+         
+    text-align: center;
+    height: 60px;
+}
 
+
+.menu{
+    float: right;
+    width: 100%;
+    height: 100%;
+    margin: none;
+}
+     
+.menu ul{
+    text-align: center;
+    float: right;
+    margin: none;
+    background: #16e0bd;
+}
+     
+.menu li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+     
+.menu li a, .menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+     
+.menu li a{
+         
+    color: #FFF;
+}
+     
+.menu li:hover a, .menu li span{
+    background: #FFF;
+    color: #303030;
+    border-left: 1px solid #303030;
+    text-decoration: none;
+}
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -41,6 +95,12 @@ body {
     font-family: var(--ff-primary);
     font-style: var(--fs-body);
     line-height: 1.6;
+    padding: 0px;
+}
+
+ol, ul{
+    padding: 0;
+    list-style: none;
 }
 
 strong {
@@ -56,6 +116,7 @@ h1,
 h2,
 h3 {
     line-height: 1.1;
+    margin: 0;
     margin: 0;
 }
 
@@ -82,8 +143,13 @@ h3 { font-size: var(--fs-h3); }
 .section_subtitle__about {
     background: var(--clr-accent);
     font-family: var(--ff-primary);
-    
+}
 
+.container{   
+    /* Set width of container to
+        1200px and align center */
+    margin: 0px auto;
+    width: 1200px;
 }
 
  

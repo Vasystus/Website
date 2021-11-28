@@ -4,26 +4,43 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" type="text/css" href="styles.css">
+     <script src="https://kit.fontawesome.com/2e6c0ac26b.js" crossorigin="anonymous"></script>
+     
      <title>Hallie Riabets' Portfolio</title>
    </head>
    <body>
 
    <!-- header -->
      <header>
-       <!-- can I do my logo in png?? or some small elephant button changing colour? -->
-       <div class="logo">
-         <!-- <img src="something.png" alt=""> -->
-       </div>
-       <button class="nav-toggle" aria-label="toggle navigation">
-         <span class="hamburger"></span>
-       </button>
-       <nav class="nav">
-          <ul class="nav_list">
-            <li class="nav_item"><a href="#home" class="nav-link">Home</a> </li>
-            <li class="nav_item"><a href="#about" class="nav-link">About me</a> </li>
-            <li class="nav_item"><a href="#work" class="nav-link">My works</a> </li>
-          </ul>
-       </nav>
+        <!-- Top header menu containing
+           logo and Navigation bar -->
+        <div class="top_header">
+                     
+            <!-- Logo -->
+            <div class="logo">
+              <i class="fas fa-coffee"></i>
+            </div>   
+             
+            <!-- Navigation Menu -->
+            <nav class="nav">
+                <div class="menu">
+                   <ul class="nav_list">
+                    <li class="nav_item"><a href="#home" class="nav-link">Home</a> </li>
+                    <li class="nav_item"><a href="#about" class="nav-link">About me</a> </li>
+                    <li class="nav_item"><a href="#work" class="nav-link">Projects</a> </li>
+                    <li class="nav_item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <!-- Do I need to state it separately  or should I include it in About me? -->
+                    <!-- <li class="nav_item"><a href="#fac" class="nav-link">Why FAC</a> </li> -->
+                   </ul>
+                </div>
+            </nav>
+        </div>   
+      
+        <!-- Image menu in Header to contain an Image and
+             a sample text over that image -->
+        <div id="header_image_menu">
+        
+        </div>
      </header>
 
    <!-- Introduction -->
@@ -43,7 +60,7 @@
          <p class="section_subtitle section_subtitle__about">Tro-lo-lo</p>
 
          <div class="about_me-body">
-            <p>Here something about me</p>
+            <p>Here is something about me</p>
             <p>Why I want to be a developer</p>
         </div>
          <img src="https://images.unsplash.com/photo-1567608346847-6d9817e63e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80" alt="still me">
@@ -51,7 +68,7 @@
 
    <!-- My work -->
       <section class="my_work" id="work">
-         <h2 class="section_title">My work</h2>
+         <h2 class="section_title">My projects</h2>
          <p class="section_subtitle"></p>
 
          <div class="portfolio">
@@ -90,7 +107,9 @@
 
     <!-- Footer -->
     <footer>
-        <a href="mailto:artgalla8@gmal.com" class="footer__link">artgalla8@gmail.com</a>
+      <section class="contact" id="contact">
+        <a href="mailto:artgalla8@gmal.com" class="footer__link" id="home">artgalla8@gmail.com</a>
+      </section>
         <ul class="social_list">
     <!-- Links to GitHub, Stackblitz, Codepen -->
             <li class="social_list__item"><a class="social_list__link" href="#"></a></li>
