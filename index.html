@@ -5,6 +5,8 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" type="text/css" href="styles.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> -->
      <script src="https://kit.fontawesome.com/2e6c0ac26b.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="script.js"></script>
@@ -28,8 +30,9 @@
                     <!-- <li class="nav_item"><a href="#fac" class="nav-link">Why FAC</a> </li> -->
                     <!-- <li class="nav_item"><a href="#links" class="nav-link">Links</a></li> -->
                     <div class="dropdown">
-                        <button class="dropbtn">Links
+                        <button class="dropbtn" id="links">Links
                            <i class="fa fa-caret-down"></i>
+                           <i class="fas fa-link"></i>
                         </button>
                         <div class="dropdown-content">
                           <a href="https://www.freecodecamp.org/fccdcd47f97-e4f8-40d3-a0da-2bb10c26fa24">freeCodeCamp</a>
@@ -57,16 +60,23 @@
      </section>
 
    <!-- About me -->
-      <section class="about_me" id="about">
-         <h2 class="section_title section_title__about">Who I am</h2>
-         <p class="section_subtitle section_subtitle__about">Tro-lo-lo</p>
+     <section class="about_me" id="about">
+       <h2 class="section_title section_title__about">About me</h2>
 
-         <div class="about_me-body">
-            <p>Here is something about me</p>
-            <p>Why I want to be a developer</p>
-        </div>
-         <img src="https://images.unsplash.com/photo-1567608346847-6d9817e63e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80" alt="still me">
-      </section>
+          <div class="background">
+                <div class="me">
+                    <h3>Who i am</h3>
+                    <p>I am passionate about interactive media, and in an age od digital I believe bringing art and design to life with code is amazingly satisfaying. </p>
+                </div> <!-- /background-->
+        
+                <div class="me">
+                    <h3>Why FAC</h3>
+                    <p>It all started with mobile games and 5 day challenges. Blame them!</p>
+                </div> <!-- / why -->
+          </div> <!-- / me -->
+    
+           <a href="#links" class="btn">Links</a>
+     </section> 
 
    <!-- My work -->
       <section class="my_work" id="work">
@@ -109,7 +119,7 @@
 
     <!-- Footer -->
     <footer>
-    
+    <!-- Can I do a section in footer? -->
       <section class="contact" id="contact">
         <h1 class="section_title section_title__contact">
             Contact: 
