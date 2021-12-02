@@ -8,6 +8,7 @@
      <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"> -->
      <script src="https://kit.fontawesome.com/2e6c0ac26b.js" crossorigin="anonymous"></script>
+     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="script.js"></script>
      <title>Hallie Riabets' Portfolio</title>
@@ -21,7 +22,7 @@
 
             <div class="menu">
                  <ul>
-
+                   <!-- add theme toggle mode button -->
                     <li class="nav_item"><a href="#home" class="nav-link">Home</a> </li>
                     <li class="nav_item"><a href="#about" class="nav-link">About me</a> </li>
                     <li class="nav_item"><a href="#work" class="nav-link">Projects</a> </li>
@@ -39,7 +40,7 @@
                           <a href="https://codepen.io/vasystus">Codepen</a>
                           <a href="https://stackblitz.com/">Stackblitz</a>
                           <a href="https://www.codewars.com/users/Hallie">Codewars</a>
-                          <a href="https://github.com/Vasystus">GitHub</a>
+                          <a href="https://github.com/Vasystus">GitHub</a>   
                         </div>
                     </div> 
 
@@ -55,35 +56,34 @@
          <h1 class="section_title section_title__intro">
              Hi, I'm <strong>Hallie Riabets</strong>
          </h1>
-         <p class= "section_subtitle section_subtitle__intro">Nice to see you!</p>
+         <p class="section_subtitle section_subtitle__intro">Nice to see you!</p>
          <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=406&q=80" alt="me happily smiling">
      </section>
 
    <!-- About me -->
      <section class="about_me" id="about">
        <h2 class="section_title section_title__about">About me</h2>
-
-          <div class="background">
-                <div class="me">
-                    <h3>Who i am</h3>
-                    <p>I am passionate about interactive media, and in an age od digital I believe bringing art and design to life with code is amazingly satisfaying. </p>
-                </div> <!-- /background-->
-        
-                <div class="me">
-                    <h3>Why FAC</h3>
-                    <p>It all started with mobile games and 5 day challenges. Blame them!</p>
-                </div> <!-- / why -->
-          </div> <!-- / me -->
-    
-           <a href="#links" class="btn">Links</a>
+      
+         <div class="background">
+               <div class="me">
+                   <h3 class="section_subtitle section_subtitle__about">Who i am</h3>
+                   <p>I am passionate about interactive media, and in an age of digital I believe bringing art and design to life with code is amazingly satisfaying. </p>
+               </div> <!-- /background-->
+       
+               <div class="me">
+                   <h3 class="section_subtitle section_subtitle__about">Why FAC</h3>
+                   <p>It all started with mobile games and 5 day challenges. Blame them!</p>
+               </div> <!-- / why -->
+         </div>
+      
+         <a href="#links" class="btn">Links</a>
      </section> 
-
    <!-- My work -->
       <section class="my_work" id="work">
-         <h2 class="section_title">My projects</h2>
-         <p class="section_subtitle"></p>
+        <h2 class="section_title">My projects</h2>
+           <p class="section_subtitle"></p>
 
-         <div class="portfolio">
+           <div class="portfolio">
             <!-- Portfolio item 01 -->
             <a href="#" class="portfolio__item">
              <!-- <img src="" alt="my work" class="portfolio_img"> -->
@@ -120,13 +120,10 @@
     <!-- Footer -->
     <footer>
     <!-- Can I do a section in footer? -->
-      <section class="contact" id="contact">
-        <h1 class="section_title section_title__contact">
-            Contact: 
-        </h1>
-        <a href="mailto:artgalla8@gmal.com" class="footer__link" id="contact">artgalla8@gmail.com</a>
+      
+        <h2 class="section_title section_title__contact">Contact:</h2>
+        <a href="mailto:artgalla8@gmal.com" class="footer__link" id="contact">artgalla8@gmail.com</a><br><br>
         <p class= "section_subtitle section_subtitle__intro">Eat, drink coffee, code!</p>
-      </section><br><br>
 
       <p class="copyright">&copy; 2021 Created by Hallie Riabets</p>
 
