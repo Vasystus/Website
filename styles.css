@@ -6,6 +6,7 @@
     margin: 0;
 }
 
+/* setting custom properties */
 :root { 
 /* font-family */
    --ff-primary: 'Source Sans Pro', sans-serif;
@@ -24,10 +25,6 @@
     --fs-body: 1 rem;
 } 
 
-html, body{
-    height: 100%;
-}
-
 /* if the screen rezises then fonts and everything will resize as well */
 @media(max-width: 800px) {
     :root {
@@ -43,7 +40,7 @@ header {
     overflow: hidden;
 }
 
-
+/* menu with buttons*/
 
 .menu{
     width: 100%;
@@ -63,7 +60,7 @@ header {
 .menu li {
     display: inline-block;
     padding: none;
-    margin: none;
+    margin: 0 0.5em;
 }
      
 .menu li a, .menu li span{
@@ -89,11 +86,10 @@ header {
     
 }
 
-/* styling links in the header */
+/* styling Links in the header */
   .dropdown {
     float: left;
     overflow: hidden;
-    
   }
   
   .dropdown .dropbtn {
@@ -103,7 +99,7 @@ header {
     color: white;
     padding: 0em 1.5em;
     background-color: inherit;
-    margin: 0;
+    margin: 0 0.5em;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 60px;
@@ -114,6 +110,7 @@ header {
     color: #FFF;
     border-left: 1px solid #303030;
     text-decoration: none;
+    border-radius: 12px;
   }
   
   .dropdown-content {
@@ -133,17 +130,19 @@ header {
     text-decoration: none;
     display: block;
     text-align: left;
+    border-radius: 12px;
   }
   
   .dropdown-content a:hover {
     background-color: #16e0bd;
     color: var(--clr-dark); 
-    
+    border-radius: 12px;
   }
   
   .dropdown:hover .dropdown-content {
     display: block;
     border-radius: 12px;
+    margin: 0 0.5em;
   }
 
 body {
@@ -159,22 +158,21 @@ body {
 ol, ul{
     padding: 0;
     list-style: none;
-}
+} 
 
 strong {
     font-weight: var(--fw-bold);
 }
 
-img {
+/* img {
    display: block;
    max-width: 100%;
-}
+} */
 
 h1, 
 h2,
 h3 {
-    line-height: 1.1;
-    margin: 0;
+    line-height: 1;
     margin: 0;
 }
 
@@ -184,6 +182,9 @@ h2 { font-size: var(--fs-h2); }
 
 h3 { font-size: var(--fs-h3); }
 
+
+/* 
+Intro section */
 .section_title {
   margin-bottom: 0.25em;
 }
@@ -197,8 +198,7 @@ strong { font-weight: var(--fw-bold) }
 .section_title__intro strong {
     display: block;
 }
-
-    
+  
 .section_subtitle {
     margin: 0;
     font-size: var(--fs-h3);  
@@ -208,6 +208,8 @@ strong { font-weight: var(--fw-bold) }
 .section_subtitle__about {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
 } 
 
 .about_me {
