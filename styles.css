@@ -143,7 +143,9 @@ header {
     display: block;
     border-radius: 12px;
     margin: 0 0.5em;
+    color: var(--clr-dark); 
   }
+
 
 body {
     background: var(--clr-light);
@@ -153,6 +155,10 @@ body {
     font-style: var(--fs-body);
     line-height: 1.6;
     padding: 0px;
+}
+
+section {
+    padding: 5em 2em;
 }
 
 ol, ul{
@@ -185,12 +191,19 @@ h3 { font-size: var(--fs-h3); }
 
 /* 
 Intro section */
+
+.intro {
+    position: relative;
+   
+}
+
 .section_title {
   margin-bottom: 0.25em;
 }
 
 .section_title__intro {
     font-weight: var(--fw-reg);
+    justify-content: center;
 }
 
 strong { font-weight: var(--fw-bold) }
