@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" type="text/css" href="styles.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"> -->
-     <script src="https://kit.fontawesome.com/2e6c0ac26b.js" crossorigin="anonymous"></script>
-     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <script src="script.js"></script>
-     <title>Hallie Riabets' Portfolio</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" type="text/css" href="styles.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+       <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"> -->
+       <script src="https://kit.fontawesome.com/2e6c0ac26b.js" crossorigin="anonymous"></script>
+       <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <title>Hallie Riabets' Portfolio</title>
    </head>
    <body>
 
@@ -34,11 +33,11 @@
                            <i class="fas fa-link"></i>
                         </button>
                         <div class="dropdown-content">
-                          <a target="_blank" href="https://www.freecodecamp.org/fccdcd47f97-e4f8-40d3-a0da-2bb10c26fa24">freeCodeCamp<i class="fab fa-free-code-camp"></i></a>
-                          <a target="_blank" href="https://codepen.io/vasystus">Codepen<i class="icon fab fa-codepen"></i></a>
-                          <a target="_blank" href="https://stackblitz.com/">Stackblitz<i class="fas fa-bolt"></i></a>
-                          <a target="_blank" href="https://www.codewars.com/users/Hallie">Codewars<img src="4691329_codewars_icon"></a>
-                          <a target="_blank" href="https://github.com/Vasystus">GitHub<i class="fab fa-github"></i></a>   
+                          <a target="_blank" href="https://www.freecodecamp.org/fccdcd47f97-e4f8-40d3-a0da-2bb10c26fa24">freeCodeCamp<i class="fab fa-free-code-camp icon"></i></a>
+                          <a target="_blank" href="https://codepen.io/vasystus">Codepen<i class="icon fab fa-codepen icon"></i></a>
+                          <a target="_blank" href="https://stackblitz.com/">Stackblitz<i class="fas fa-bolt icon"></i></a>
+                          <a target="_blank" href="https://www.codewars.com/users/Hallie">Codewars<i class="fas fa-id-badge icon"></i></a>
+                          <a target="_blank" href="https://github.com/Vasystus">GitHub<i class="fab fa-github icon"></i></a>   
                         </div>
                     </div> 
 
@@ -54,8 +53,11 @@
          <h1 class="section_title section_title__intro">
              Hi, I'm <strong>Hallie Riabets</strong>
          </h1>
-         <p class="section_subtitle section_subtitle__intro">Nice to see you!</p>
-         <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=406&q=80" alt="me happily smiling" class="intro_img">
+         <p class="section_subtitle section_subtitle__intro">Nice to see you!
+            <button class="lightbulb" onclick="changeBackground()"><i class="fas fa-lightbulb"></i></button>
+         </p>
+         <img src="https://i.postimg.cc/8CjXhzgY/Hallie-2.jpg" style alt="me smiling" class="intro_img">
+      <!-- add toggle button?   -->
      </section>
 
    <!-- About me -->
@@ -71,6 +73,7 @@
                <div class="me">
                    <h3 class="section_subtitle section_subtitle__about">Why FAC</h3>
                    <p>It all started with mobile games and 5 day challenges. Blame them!</p>
+                   <!-- tree view? -->
                </div> <!-- / why -->
          </div>
       
@@ -116,16 +119,37 @@
 
 
     <!-- Footer -->
-    <footer>
-      
-        <h2 class="section_title section_title__contact">Contact me:</h2>
-        <a href="mailto:artgalla8@gmal.com" class="footer__link" id="contact">artgalla8@gmail.com</a><br><br>
-        <p class= "section_subtitle section_subtitle__intro">Eat, drink coffee, code!</p>
+       <footer>
+          <div class="flip">
+              <div class="flip_box">
+                   <div class="flip_box_inner">
+                      <div class="flip_box_front">
+                          <h2>Contact me:</h2>
+                      </div>
+                      <div class="flip_box_back">
+                          <a href="mailto:artgalla8@gmal.com" class="footer_contact" id="contact">artgalla8@gmail.com</a>
+                      </div>
+                   </div>
+              </div>
 
-      <p class="copyright">&copy; 2021 Created by Hallie Riabets</p>
-
-    </footer>
-
+              <div class="flip_box">
+                   <div class="flip_box_inner">
+                      <div class="flip_box_front">
+                          <h2>See this repository on GitHub</h2>
+                      </div>
+                      <div class="flip_box_back">
+                          <h2><a class="gitlink" target="_blank" href="https://github.com/Vasystus/Website"><i class="fab fa-github footer_git"></i></a></h2>
+                      </div>
+                   </div>
+              </div>
+          </div>
+        <p class="footer_message">Create, drink coffee, code!</p>
+     <!-- Hidden message? -->
+    
+        <p class="copyright">&copy; 2021 Created by Hallie Riabets</p>
+    
+       </footer>
+     <script src="script.js"></script> 
    </body>
 </html>
 
