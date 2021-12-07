@@ -170,7 +170,7 @@ body {
 }
 
 .lightbulb {
-    float: right;
+
     margin-right: 10px;
     cursor: pointer;
     outline: none;
@@ -327,6 +327,7 @@ strong { font-weight: var(--fw-bold) }
     max-width: 500px;
     margin: 0 auto;
     padding: 18px;
+    text-align: center;
     
 }
 
@@ -374,7 +375,6 @@ strong { font-weight: var(--fw-bold) }
 
 .section_subtitle__work {
     color: var(--clr-dark);
-    /* font-weight: var(--fw-bold); */
     margin-bottom: 32px;
 }
 
@@ -383,14 +383,18 @@ strong { font-weight: var(--fw-bold) }
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     border: none;
     border-radius: 12px;
+
 }
 
 .portfolio_item {
     background: var(--clr-dark);
-    overflow: hidden;
+    overflow: hidden;max-width: 100%;
+    border-radius: 10px;
 }
 
 .portfolio_img {
+    width: 85%;
+    height: 240px;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
@@ -449,17 +453,6 @@ Slideshow */
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* flip-boxes */
 .flip {
     display: flex;
@@ -477,6 +470,7 @@ Slideshow */
     height: 200px;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
+    border-radius: 12px;
 }
   
 .flip_box_inner {
@@ -516,10 +510,12 @@ Slideshow */
     display: flex;
     justify-content: center;
     flex-flow: column;
+    font-size: 1rem;
 }
  .flip_contact,
  .flip_link {
      color: var(--clr-dark);
+  
  }
 
 
