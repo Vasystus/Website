@@ -289,6 +289,7 @@ strong { font-weight: var(--fw-bold) }
     font-family: var(--ff-secondary);
     margin-bottom: 0.280px;
     margin-top: 0.280px;
+
 } 
  /* About Me section */
 
@@ -399,8 +400,53 @@ strong { font-weight: var(--fw-bold) }
     transform: scale(1.2);
     opacity: 0.5;
 }
+/* 
+Slideshow */
+
+.essex {
+
+    color: var(--clr-dark);
+    margin-right: 10px;
+}
+
+.essex:hover {color: yellow;}
+
+.essex:active {
+  color: var(--clr-light);
+}
 
 
+[data-component="slideshow"] .slide {
+  display: none;
+  align-content: center;
+  text-align: center;
+  border-radius: 12px;
+  height: auto;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+[data-component="slideshow"] .slide.active {
+  display: block;
+  width: 100%;
+}
+
+.text {
+  
+  font-size: 16px;
+  margin-top: 5px;
+  width: 100%;
+  border-color: var(--clr-accent);
+  border-bottom-style: solid;
+  padding: 5px;
+  font-family: open-sans,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .06rem;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  color: var(--clr-dark);
+}
 
 
 
@@ -475,6 +521,7 @@ strong { font-weight: var(--fw-bold) }
  .flip_link {
      color: var(--clr-dark);
  }
+
 
 
 .footer_message {
