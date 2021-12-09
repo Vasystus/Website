@@ -4,9 +4,11 @@
 You can view the application website at the following link:
 
 
-🐘🐘🐘🐘🐘🐘🐘🐘
-🐘  Website link 🐘
-🐘🐘🐘🐘🐘🐘🐘🐘
+🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘
+🐘                                        🐘
+🐘  https://github.com/Vasystus/Website   🐘
+🐘                                        🐘
+🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘
 
 
 It fulfils the following criteria:
