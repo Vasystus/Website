@@ -249,8 +249,8 @@ Intro section */
         min-width: 250px;
         position: relative;
         z-index: index 2;
-    }    
-    
+    }  
+      
     .section_subtitle__intro {
         align-self: start;
         grid-column: -1 / 1;
@@ -330,12 +330,10 @@ strong { font-weight: var(--fw-bold) }
 }
 
 .me {
-
     max-width: 500px;
     margin: 0 auto;
     padding: 18px;
     text-align: justify;
-    
 }
 
 @media (min-width: 800px) {
@@ -386,6 +384,17 @@ strong { font-weight: var(--fw-bold) }
     margin-bottom: 32px;
 }
 
+.section_title__work::after,
+.section_subtitle__work::after {
+    content: '';
+    display: flex;
+    width: 32px;
+    height: 1px;
+    margin: 8px auto 16px;
+    background: var(--clr-dark);
+    opacity: 0.25;
+}
+
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -412,6 +421,7 @@ strong { font-weight: var(--fw-bold) }
     opacity: 0.5;
    
 }
+
 
 /* 
 Slideshow */
@@ -480,6 +490,7 @@ Slideshow */
     border: 1px solid #f1f1f1;
     perspective: 1000px;
     border-radius: 12px;
+    
 }
   
 .flip_box_inner {
@@ -488,6 +499,7 @@ Slideshow */
     transition: transform 0.8s;
     transform-style: preserve-3d;
     text-align: center;
+    
 }
   
 .flip_box:hover .flip_box_inner {
@@ -501,6 +513,8 @@ Slideshow */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 12px;
+    outline: 2px dotted var(--clr-light);
+    outline-offset: -20px;
   }
 
 .flip_box_front {
@@ -510,6 +524,7 @@ Slideshow */
     justify-content: center;
     flex-flow: column;
     font-size: 1.5rem;
+    
 }
 
 .flip_box_back {
@@ -520,11 +535,11 @@ Slideshow */
     justify-content: center;
     flex-flow: column;
     font-size: 1rem;
+    
 }
  .flip_contact,
  .flip_link {
      color: var(--clr-dark);
-  
  }
 
 
@@ -532,6 +547,31 @@ Slideshow */
 .footer_message {
     text-align: center;
 }
+
+.footer_button {
+    /* border: 0;
+    line-height: 2;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 13px;
+    background-color: #04AA6D */
+        display: inline-block;
+        padding: 8px 24px;
+        background: var(--clr-accent);
+        color: var(--clr-dark);
+        text-decoration: none;
+        cursor: pointer;
+        font-size: .8rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: var(--fw-bold);
+        transition: transform 200ms ease-in-out;
+        border-radius: 12px;
+        margin-top: 32px;
+        margin-bottom: 48px;
+    }
+
 .copyright {
 font-size: 14px;
 color: var(--clr-dark);
