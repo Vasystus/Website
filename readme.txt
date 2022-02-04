@@ -1,4 +1,4 @@
- F&C Application 2021 by Hallie Riabets
+## F&C Application 2021 by Hallie Riabets
 
 
 You can view the application website at the following link:
@@ -24,7 +24,7 @@ It fulfils the following criteria:
  * Includes Image Carousel and Theme Toggle Button.
 
 
-There are also links to my profiles on:
+## There are also links to my profiles on:
 
 🐘 FreeCodeCamp;
 🐘 Stackblitz;
