@@ -74,7 +74,7 @@ header {
 }
      
 .menu li a {     
-    color: var(--clr-light);
+    color: var(--clr-dark);
 }
      
 .menu li:hover a, .menu li span{
@@ -95,7 +95,7 @@ header {
     font-size: 16px;  
     border: none;
     outline: none;
-    color: var(--clr-light);
+    color: var(--clr-dark);
     padding: 0em 24px;
     background-color: inherit;
     margin: 0 8px;
@@ -374,7 +374,7 @@ strong { font-weight: var(--fw-bold) }
 /* My Projects section */
 .my_work {
     background-color: var(--clr-accent);
-    color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
 }
 
