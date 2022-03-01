@@ -12,7 +12,7 @@
    --ff-primary: 'Source Sans Pro', sans-serif;
    --ff-secondary: 'Source Code Pro', monospace;
 /* intencity of color */
-    --fw-reg: 400;
+    --fw-reg: 500;
     --fw-bold: 900;
 
     --clr-light: #fff;
@@ -26,7 +26,7 @@
 } 
 
 /* if the screen rezises then fonts and everything will resize as well */
-@media(max-width: 800px) {
+@media(max-width: 640px) {
     :root {
         --fs-h1: 4.5 rem;
         --fs-h2: 3.75 rem;
@@ -84,7 +84,21 @@ header {
     text-decoration: none;
     
 }
+/* Responsive navigator menu */
 
+  
+  @media screen and (max-width: 640px) {
+    
+    .menu li {
+      display: list-item;
+      right: 0;
+      top: 0;
+      position: relative;
+    }
+   
+  }
+  
+  
 /* styling Links in the header */
 .dropdown {
     float: left;
@@ -331,7 +345,7 @@ strong { font-weight: var(--fw-bold) }
 
 .me {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 18px;
     padding: 18px;
     text-align: justify;
 }
@@ -404,6 +418,7 @@ strong { font-weight: var(--fw-bold) }
 }
 
 .portfolio_item {
+
     background: var(--clr-dark);
     overflow: hidden;
     max-width: 100%;

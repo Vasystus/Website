@@ -25,3 +25,4 @@ let index = 0, time = 4000;
 
 	}, time);
 }
+
