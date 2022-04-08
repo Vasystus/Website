@@ -539,7 +539,7 @@ Slideshow */
     justify-content: center;
     flex-flow: column;
     font-size: 1.5rem;
-    
+    overflow: auto;
 }
 
 .flip_box_back {
@@ -550,12 +550,14 @@ Slideshow */
     justify-content: center;
     flex-flow: column;
     font-size: 1rem;
-    
+    overflow: auto;
 }
  .flip_contact,
  .flip_link {
      color: var(--clr-dark);
+     overflow: auto;
  }
+
 
 
 
